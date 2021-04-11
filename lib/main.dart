@@ -2,6 +2,7 @@
 * Course Mobile Enabled Devices - CENG-10021*/
 import 'package:flutter/material.dart';
 
+//TODO DF does fire authentication
 void main() {
   runApp(MyApp());
 }
