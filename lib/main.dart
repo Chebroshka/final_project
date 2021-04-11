@@ -3,6 +3,12 @@
 import 'package:flutter/material.dart';
 
 //TODO DF does fire authentication
+//TODO API Service -"Weather"
+//TODO Charts
+//TODO Class Data Structure min 2
+//TODO 4 Screen including user profile
+//TODO Lean Code!
+
 void main() {
   runApp(MyApp());
 }
