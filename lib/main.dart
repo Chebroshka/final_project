@@ -1,3 +1,5 @@
+/*Final Project
+* Course Mobile Enabled Devices - CENG-10021*/
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,7 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+      title: 'Final Project',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(title: 'Final Project'),
     );
   }
 }
