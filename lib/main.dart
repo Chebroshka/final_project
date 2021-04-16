@@ -1,6 +1,7 @@
 /*Final Project
 * Course Mobile Enabled Devices - CENG-10021*/
 import 'package:flutter/material.dart';
+import 'package:final_project/main_drawer.dart';
 
 //TODO DF does fire authentication
 //TODO API Service -"Weather"
@@ -48,37 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            DrawerHeader(
-              child: Text('Menu'),
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-            ),
-            ListTile(
-              title: Text('Item 1'),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: Text('Item 2'),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: Text('Logout'),
-              onTap: () {},
-            ),
-          ],
-        ),
-      ),
+      drawer: MainDrawer(),
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
