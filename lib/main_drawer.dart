@@ -8,28 +8,74 @@ class MainDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
-            child: Text('Menu'),
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Theme.of(context).primaryColor,
+            ),
+            child: Stack(
+              children: [
+                Align(
+                  alignment: Alignment.topCenter,
+                  child: Text(
+                    'Menu',
+                    style: TextStyle(fontSize: 22),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage('assets/images/girls_PNG6474.png'),
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: Text(
+                    'Jane Dow',
+                    style: TextStyle(fontSize: 22, color: Colors.white),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.centerRight + Alignment(0, .3),
+                  child: Text(
+                    'jane.dow@email.com',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ],
             ),
           ),
           ListTile(
-            title: Text('Item 1'),
+            leading: Icon(Icons.settings),
+            title: Text('Settings'),
             onTap: () {
-// Update the state of the app.
-// ...
+              Navigator.of(context).pop();
+              //Navigator.of(context).pushNamed(routeName);
             },
           ),
           ListTile(
-            title: Text('Item 2'),
+            leading: Icon(Icons.bar_chart_outlined),
+            title: Text('Charts'),
+            trailing: Icon(Icons.arrow_right),
             onTap: () {
-// Update the state of the app.
-// ...
+              Navigator.of(context).pop();
+              //Navigator.of(context).pushNamed(routeName);
             },
           ),
           ListTile(
+            leading: Icon(Icons.lock),
             title: Text('Logout'),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+              //Navigator.of(context).pushNamed(routeName);
+            },
           ),
         ],
       ),
