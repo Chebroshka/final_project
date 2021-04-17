@@ -22,11 +22,6 @@ class _SignUpFormState extends State<SignUpForm> {
     return emailRegex.hasMatch(input);
   }
 
-  bool isValidPhone(String input) {
-    return RegExp(r"^[0-9]{10}$").hasMatch(input);
-    //https://regex101.com/
-  }
-
   void _togglevisibility1() {
     setState(() {
       _showPassword1 = !_showPassword1;
