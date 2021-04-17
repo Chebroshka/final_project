@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:final_project/main_drawer.dart';
 import 'package:final_project/profile_form.dart';
+import 'package:final_project/login_screen.dart';
 
 //TODO DF does fire authentication
 //TODO API Service -"Weather"
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => MyHomePage(title: 'Final Project'),
-        // '/login': (context) => AuthenticationWidget(),
+        '/login': (context) => LoginScreen(),
         '/signup': (context) => SignUpForm(),
       },
       initialRoute: '/',
