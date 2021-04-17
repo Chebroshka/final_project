@@ -72,7 +72,7 @@ class MainDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.lock),
-            title: Text('Logout'),
+            title: Text('Login'),
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).pushNamed('/login');
