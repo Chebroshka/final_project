@@ -2,6 +2,7 @@
 * Course Mobile Enabled Devices - CENG-10021*/
 import 'package:flutter/material.dart';
 import 'package:final_project/main_drawer.dart';
+import 'package:final_project/profile_form.dart';
 
 //TODO DF does fire authentication
 //TODO API Service -"Weather"
@@ -23,7 +24,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: MyHomePage(title: 'Final Project'),
+      routes: {
+        '/': (context) => MyHomePage(title: 'Final Project'),
+        // '/login': (context) => AuthenticationWidget(),
+        '/signup': (context) => SignUpForm(),
+      },
+      initialRoute: '/',
     );
   }
 }

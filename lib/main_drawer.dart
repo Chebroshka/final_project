@@ -57,7 +57,8 @@ class MainDrawer extends StatelessWidget {
             title: Text('Settings'),
             onTap: () {
               Navigator.of(context).pop();
-              //Navigator.of(context).pushNamed(routeName);
+              Navigator.of(context).pushNamed(
+                  '/signup'); //Todo remove signup navigation and put user profile edit
             },
           ),
           ListTile(
@@ -74,7 +75,7 @@ class MainDrawer extends StatelessWidget {
             title: Text('Logout'),
             onTap: () {
               Navigator.of(context).pop();
-              //Navigator.of(context).pushNamed(routeName);
+              // Navigator.of(context).pushNamed('/login');
             },
           ),
         ],
